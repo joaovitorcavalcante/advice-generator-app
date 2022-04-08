@@ -1,0 +1,31 @@
+:root {
+  --base-background: hsl(218, 23%, 16%);
+  --card-background: hsl(217, 19%, 24%);
+
+  --heading-color: hsl(150, 100%, 66%);
+  --heading-text-mobile: 11px;
+  --heading-text-desktop: 13px;
+
+  --quote-color: hsl(193, 38%, 86%);
+  --quote-text-mobile: 24px;
+  --quote-text-desktop: 28px;
+
+  --btn-background: hsl(150, 100%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--base-background);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}

@@ -1,0 +1,118 @@
+.Card {
+  position: relative;
+
+  background-color: var(--card-background);
+
+  max-width: 540px;
+  padding: 0px 48px;
+
+  border-radius: 15px;
+}
+
+.Card__Header {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.Card__Title {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--heading-color);
+  letter-spacing: 4.1px;
+
+  font-size: var(--heading-text-desktop);
+}
+
+.Card__Content {
+  text-align: center;
+  color: var(--quote-color);
+
+  font-size: var(--quote-text-desktop);
+  line-height: 38px;
+  letter-spacing: -0.3px;
+}
+
+.Card__Divider {
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.Card__Divider--show-mobile {
+  display: none;
+}
+
+.Card__Divider--show-desktop {
+  display: block;
+}
+
+.Card__Footer,
+.Card__Form {
+  width: 100%;
+}
+
+.Card__Form {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: calc(0% - 32px);
+  left: 0px;
+}
+
+.Card__Submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  background-color: var(--btn-background);
+
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.Card__Submit--state-hover:hover {
+  box-shadow: 0 0 40px var(--btn-background);
+}
+
+@media (max-width: 375px) {
+  .Card {
+    max-width: 343px;
+    padding: 0px 24px;
+
+    border-radius: 10px;
+  }
+
+  .Card__Header {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .Card__Title {
+    font-size: var(--heading-text-mobile);
+  }
+
+  .Card__Content {
+    font-size: var(--quote-text-mobile);
+    line-height: 33px;
+    letter-spacing: -0.25px;
+  }
+
+  .Card__Divider {
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+
+  .Card__Divider--show-mobile {
+    display: block;
+  }
+
+  .Card__Divider--show-desktop {
+    display: none;
+  }
+}
