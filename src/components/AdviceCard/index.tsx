@@ -65,7 +65,11 @@ export function AdviceCard() {
       />
 
       <footer className={styles.Card__Footer}>
-        <form onSubmit={handleSubmit} className={styles.Card__Form}>
+        <form
+          onSubmit={handleSubmit}
+          data-testid="change-advice"
+          className={styles.Card__Form}
+        >
           <button
             type="submit"
             className={`${styles.Card__Submit} ${styles['Card__Submit--state-hover']}`}
